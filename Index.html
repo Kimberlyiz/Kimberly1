@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    background-image: url(Roatan1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #f8ec3f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f8ec3f;
+}
+
+nav {
+    background-color: rgba(12, 0, 61, 0.658);
+    position: absolute;
+    top: 0;
+    width: 165%;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about, .contenedor-galeria, .Registrar {
+    margin-bottom: 40px;
+}
+
+.contenedor-galeria {
+    text-align: center;
+   
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.gallery {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    left:100px ;
+    right: 50px;
+    text-align: center;
+    width: 85%;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery h3 {
+    margin-top: 10px;
+}
+
+.gallery .price {
+    font-weight: bold;
+    color: #ff007f;
+    margin: 10px 0;
+    
+}
+
+.Registrarse form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.Registrarse label {
+    display: block;
+    margin-top: 10px;
+}
+
+.Registrarse input, .Registrar textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.Registrarse button {
+    background-color: #00ff22a4;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    bottom: 200%;
+    margin-left: 65px;
+    margin-top: 50px;
+    align-items: center;
+    bottom: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Registrarse button:hover {
+    background-color: #00ff22a4;
+    bottom: 50px;
+}
+
+footer {
+    background-color: #0e0d0de5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>¡Deja que la vida Fluya!</h1>
+                <p>La felicidad se respira al pie del mar, escparse y sentarse tranquilamente en la playa, esa es la idea de un buen paraiso</p>
+                <a href="#contenedor-galeria" class="btn-primary">Más</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contenedor-galeria">Galeria</a></li>
+                <li><a href="#Registrarse">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Nuestro objetivo principal es hacer de nuestro pueblo un destino turístico más, para que nos puedan visitar y darnos a conocer a nivel nacional e internacional.Aqui puedras encontrar las mejores playas y muchas curiosidades sobre ellas.</p>
+        </section>
+        <section id="contenedor-galeria" class="contenedor-galeria">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <div class="gallery">
+                    <img src="Playa Esmeralda.jpeg" alt="Playa Esmeralda ">
+                    <h3>1. Playa Esmeralda</h3>
+                    <p>La Costa Esmeralda es una de las principales joyas naturales del estado de Veracruz. Son más de veinte kilómetros de playas que corren desde Nautla y Tlapacoyan hasta más allá de La Guadalupe y Tecolutla.</p>
+                    <a href="#" class="btn-primary">Ver mas</a>
+                </div>
+                <div class="gallery">
+                    <img src="Playa de Benagil.jpg" alt="Playa de Benagil">
+                    <h3>2. Playa de Benagil</h3>
+                    <p>Aprovecha al máximo un alquiler de 2 horas con tiempo de sobra para ver atracciones por excelencia del Algarve, como la Cueva de Benagil.</p>
+                    <a href="#" class="btn-primary">Ver mas</a>
+                </div>
+                <div class="gallery">
+                    <img src="3-west-bay.jpg.image.347.195.low.jpg" alt="Playa 3">
+                    <h3>3. West Bay Beach (Roatán)</h3>
+                    <p>West Bay, un paraíso costero situado a lo largo de la costa norte de la isla de Roatán. Estamos hablando de una fabulosa extensión de arena blanca donde puedes hundir tus pies y caminar hacia aguas cristalinas y tranquilas, protegidas por uno de los mayores arrecifes de coral del mundo.</p>
+                    <a href="#" class="btn-primary">Ver mas</a>
+                </div>
+            </div>
+        </section>
+        <section id="Registrarse" class="Registrarse">
+            <h2>Registrarse</h2>
+            <form action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Descubre mas sobre las bellas playas de Roatan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
